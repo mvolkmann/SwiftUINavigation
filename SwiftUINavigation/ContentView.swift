@@ -5,7 +5,8 @@ struct Page1: View {
         VStack {
             Text("This is page one.")
                 .navigationTitle("Page 1")
-                .navigationBarTitleDisplayMode(.inline) // .large leaves too much space above
+                .navigationBarTitleDisplayMode(.inline)
+                // .large leaves a large amount of space above
             Spacer()
             HStack {
                 NavigationLink(destination: Page2()) {
